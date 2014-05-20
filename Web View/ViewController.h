@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UIWebViewDelegate>
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
+
+- (IBAction)btnTwitter:(id)sender;
+- (IBAction)btnAboutMe:(id)sender;
+- (IBAction)btnGoogle:(id)sender;
+- (IBAction)btnReload:(id)sender;
+- (IBAction)btnStop:(id)sender;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 @end
